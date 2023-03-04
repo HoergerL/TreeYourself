@@ -6,6 +6,7 @@ from app.forms import SurveyForm
 @app.route('/index', methods=['GET', 'POST'])
 def index():
     form = SurveyForm()
+    print("Test")
     if form.validate_on_submit():
         answers = []
         print(f"submited!")
@@ -14,6 +15,7 @@ def index():
                 print(f"{field.name}={field.data}")
                 answers.append(field.data)
         tags_from_answers(answers)  
+    print(form.errors)
     return render_template('index.html', form=form)
 
 def tags_from_answers(answers_list):

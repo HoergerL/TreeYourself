@@ -6,7 +6,8 @@
         <h4>please take at least 2 mins per question and think about what you want do to now/3 years/5 years</h4>
         <br>
         <br>
-
+        <form method="POST" action="/index">
+            {{ form.csrf_token }}
         <div class="row">
             <div class="col-md-4">
                 {{ form.question1.label()}}
@@ -108,8 +109,9 @@
 
         <div class="row">
             <div class="btn btn-primary">
-                {{ form.submit()}}
+                {{ form.submit}}
             </div>
-        </div>
+        </div> 
+        </form>
 
 {% endblock %}
