@@ -13,7 +13,7 @@ woman30 = [
     "The future I want to avoid is one where I'm unfulfilled and unhappy. I don't want to settle for a career or lifestyle that doesn't bring me joy, and I don't want to surround myself with people who bring me down. I want to avoid a future where I'm stuck in a rut and not living up to my full potential."
 ]
 
-transgender_women20 = [
+transgender_woman20 = [
     "One thing I could do better is to improve my communication skills. Sometimes I struggle to express my thoughts and ideas clearly, which can lead to misunderstandings and missed opportunities. By working on my communication skills, I can better convey my message and connect with others on a deeper level.",
     "There are so many things I want to learn about, but at the top of my list is improving my knowledge about environmental sustainability. I want to better understand how I can reduce my impact on the environment and live a more eco-friendly lifestyle.",
     "I want to improve my daily exercise routine and make it a consistent habit. I know that physical activity is important for my health and wellbeing, but sometimes I struggle to find the motivation to get moving. By making exercise a regular part of my routine, I can improve my physical and mental health.",
@@ -27,7 +27,7 @@ transgender_women20 = [
 ]
 
 woman40 = [
-    "I would like to take more risks. As I get older, I find myself becoming more cautious and hesitant to try new things. But I know that growth and progress often come from stepping outside of our comfort zones. So I am working on cultivating a mindset of courage and openness to new experiences. I am reminding myself that failure is not the end of the world, and that taking a chance can lead to great rewards."
+    "I would like to take more risks. As I get older, I find myself becoming more cautious and hesitant to try new things. But I know that growth and progress often come from stepping outside of our comfort zones. So I am working on cultivating a mindset of courage and openness to new experiences. I am reminding myself that failure is not the end of the world, and that taking a chance can lead to great rewards.",
     "I want to learn more about sustainable design practices and how I can integrate them into my work. By being mindful of my environmental impact, I can create designs that are both beautiful and responsible.",
     "I want to improve my habit of procrastination by setting more concrete goals and deadlines for myself. By breaking down large tasks into smaller, more manageable steps, I can make steady progress towards my goals and avoid getting overwhelmed.",
     "In the future, I want to maintain close relationships with my family and friends while also expanding my social circle through networking events and professional organizations. I believe that having a strong support network is essential for personal and professional success.",
