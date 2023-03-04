@@ -2,6 +2,7 @@ from flask import render_template
 from app import app
 from app.forms import SurveyForm
 from app.personas import woman30
+import os
 from app.classification import tags_from_answers
 
 tags = []
@@ -45,3 +46,14 @@ def persona():
         print(result)
     print(form.errors)
     return render_template('index.html', form=form)
+
+
+@app.route('/tree', methods=['GET', 'POST'])
+def tree():
+    # full_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'shovon.jpg')
+    return render_template('tree.html')
+
+@app.route('/icon1', methods=['GET', 'POST'])
+def icon1():
+    # full_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'shovon.jpg')
+    return "icon1 found, just wow!"
