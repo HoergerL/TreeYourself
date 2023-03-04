@@ -2,6 +2,12 @@ from flask import render_template
 from app import app
 from app.forms import SurveyForm
 from app.personas import woman30
+from app.classification import tags_from_answers
+
+tags = []
+with open('tags.txt') as file:
+    for line in file:
+        tags.append(line.strip('\n'))
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
@@ -15,7 +21,8 @@ def index():
             if field.type == "StringField":
                 print(f"{field.name}={field.data}")
                 answers.append(field.data)
-        tags_from_answers(answers)  
+        result = tags_from_answers(answers, tags) 
+        print(result) 
     print(form.errors)
     return render_template('index.html', form=form)
 
@@ -34,9 +41,7 @@ def persona():
             if field.type == "StringField":
                 print(f"{field.name}={field.data}")
                 answers.append(field.data)
-        tags_from_answers(answers)  
+        result = tags_from_answers(answers, tags)
+        print(result)
     print(form.errors)
     return render_template('index.html', form=form)
-
-def tags_from_answers(answers_list):
-    print(answers_list)
