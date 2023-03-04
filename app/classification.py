@@ -1,7 +1,7 @@
 from transformers import pipeline
 
 
-def tag_answers(answers, tags):
+def tags_from_answers(answers, tags):
     classifier = pipeline("zero-shot-classification",
                       model="facebook/bart-large-mnli")
     
@@ -25,5 +25,5 @@ with open('tags') as file:
 
 answers = ['Read more books.', 'More responsible Finances.', 'Eat less sweets.', 'Keep in touch with dear friends.', 'Workout more in gym.', 'Visit family more often.', 'Land dream job in IT.', 'Become better listener.', 'Family, with children and a picket fence.', 'Not prepared for unemployment.']
 
-result = tag_answers(answers=answers, tags=tags)
+result = tags_from_answers(answers=answers, tags=tags)
 print(result)
