@@ -2,10 +2,113 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-        <h1> Edit {{ day }} !</h1>
+        <h1>TreeYourself</h2>
+        <h4>please take at least 2 mins per question and think about what you want do to now/3 years/5 years</h4>
+        <br>
+        <br>
+
         <div class="row">
             <div class="col-md-4">
-                {{ wtf.quick_form(form) }}
+                {{ form.question1.label()}}
+                {{ form.question1() }}
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question2.label()}}
+                {{ form.question2() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question3.label()}}
+                {{ form.question3() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question4.label()}}
+                {{ form.question4() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question5.label()}}
+                {{ form.question5() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question6.label()}}
+                {{ form.question6() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question7.label()}}
+                {{ form.question7() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question8.label()}}
+                {{ form.question8() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question9.label()}}
+                {{ form.question9() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{ form.question10.label()}}
+                {{ form.question10() }}
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="btn btn-primary">
+                {{ form.submit()}}
             </div>
         </div>
 
