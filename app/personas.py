@@ -12,3 +12,16 @@ woman30 = [
     "My ideal future is one where I'm surrounded by love, happiness, and fulfillment. I hope to have a successful career, a supportive community, and a happy family life. I want to continue learning and growing as a person, and making a positive impact on the world.",
     "The future I want to avoid is one where I'm unfulfilled and unhappy. I don't want to settle for a career or lifestyle that doesn't bring me joy, and I don't want to surround myself with people who bring me down. I want to avoid a future where I'm stuck in a rut and not living up to my full potential."
 ]
+
+transgender_women20 = [
+    "One thing I could do better is to improve my communication skills. Sometimes I struggle to express my thoughts and ideas clearly, which can lead to misunderstandings and missed opportunities. By working on my communication skills, I can better convey my message and connect with others on a deeper level.",
+    "There are so many things I want to learn about, but at the top of my list is improving my knowledge about environmental sustainability. I want to better understand how I can reduce my impact on the environment and live a more eco-friendly lifestyle.",
+    "I want to improve my daily exercise routine and make it a consistent habit. I know that physical activity is important for my health and wellbeing, but sometimes I struggle to find the motivation to get moving. By making exercise a regular part of my routine, I can improve my physical and mental health.",
+    "In the future, I hope to have a strong and supportive social network of friends and family. I want to cultivate deep and meaningful relationships with the people in my life and create lasting memories together.",
+    "In the future, I hope to spend more time exploring the great outdoors and going on adventures. I want to challenge myself physically and mentally by trying new activities and pushing myself out of my comfort zone.",
+    "In the future, I hope to have a happy and loving family with my partner and children. I want to create a warm and nurturing home environment where everyone feels loved and supported.",
+    "In the future, I hope to have a fulfilling and meaningful career where I can make a positive impact on the world. I want to use my skills and talents to help others and create a better future for all.",
+    "I admire people who are kind, empathetic, and compassionate. These qualities are essential for building strong and supportive relationships and creating a better world for everyone.",
+    "In my ideal future, I am living a happy and fulfilling life surrounded by people I love and doing work that I find meaningful and impactful. I am healthy, financially secure, and contributing to the betterment of society.",
+    "A future to avoid would be one where I am stuck in a job or lifestyle that makes me unhappy and unfulfilled. I want to avoid a future where I am not living up to my full potential or making a positive impact on the world."
+]
