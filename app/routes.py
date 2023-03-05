@@ -123,7 +123,8 @@ def tree():
     filtered_keys = {}
     for key in shared_keys:
         filtered_keys[key] = icons[key]
-    return render_template("tree.html", tags=list(filtered_keys.values()))
+    return render_template("tree.html", tags=list(icons.values()))
+    # return render_template("tree.html", tags=list(filtered_keys.values()))
 
 @app.route('/icon/<tag>', methods=['GET', 'POST'])
 def icon(tag):
