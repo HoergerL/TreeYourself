@@ -1,27 +1,13 @@
-area {
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color:blueviolet;
-    z-index: 999;
-    position:absolute;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/4151/4151213.png');
-    background-size: contain;
-}
-img {
+/* img {
     z-index: 1;
-}
-
-overlay {
-    position:absolute;
-}
+} */
 
 h1 {
     color:brown
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    /* height: 50px; */
     position: absolute;
 }
