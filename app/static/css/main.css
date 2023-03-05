@@ -6,6 +6,11 @@ h1 {
     color:brown
 }
 
+.iconDescription {
+    width: 100px;
+    height: 100px;
+}
+
 .icon {
     width: 70px;
     /* height: 50px; */
