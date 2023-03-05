@@ -52,8 +52,18 @@ def persona1():
                 answers.append(field.data)
         result_dict = personas.woman30_result
         print("\n########### result dict:")
-        print(result_dict)
-        return render_template("tree.html", tags=result_dict.keys())
+        print(result_dict.keys())
+        # only get keys from answers but keep information like filename etc.
+        print("\n########### icons dict:")
+        print(icons.keys())
+        shared_keys = result_dict.keys() & icons.keys()
+        print("\n########### filtered keys")
+        print(shared_keys)
+        filtered_keys = {}
+        for key in shared_keys:
+            filtered_keys[key] = icons[key]
+        
+        return render_template("tree.html", tags=list(filtered_keys.values()))
     print(form.errors)
     return render_template('index.html', form=form)
 
