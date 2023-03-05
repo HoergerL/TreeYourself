@@ -8,9 +8,7 @@ area {
     background-image: url('https://cdn-icons-png.flaticon.com/512/4151/4151213.png');
     background-size: contain;
 }
-img {
-    z-index: 1;
-}
+
 
 overlay {
     position:absolute;
@@ -18,6 +16,11 @@ overlay {
 
 h1 {
     color:brown
+}
+
+.iconDescription {
+    width: 100px;
+    height: 100px;
 }
 
 .icon {

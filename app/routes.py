@@ -123,4 +123,5 @@ def icon(tag):
     print(result_dict)
     print(result_dict[tag])
     tag_answer = result_dict[tag]
-    return f"Tag {tag} found, just wow! Tag answer: \n" + str(tag_answer)
+    #return f"Tag {tag} found, just wow! Tag answer: \n" + str(tag_answer)
+    return render_template("icon.html", tag=tag, answer=result_dict[tag])
