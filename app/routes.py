@@ -37,13 +37,13 @@ def index():
 def mentor():
     return render_template('mentor.html')
 
+
 @app.route('/persona1', methods=['GET', 'POST'])
 def persona1():
     global result_dict
-    print("reached persona1!")
     form = SurveyForm()
     form.question1.data = "blub"
-    for field, answer in zip(form,personas.woman30):
+    for field, answer in zip(form,personas.woman40):
         if field.type == "StringField":
             field.data = answer
             
@@ -54,7 +54,7 @@ def persona1():
             if field.type == "StringField":
                 print(f"{field.name}={field.data}")
                 answers.append(field.data)
-        result_dict = personas.woman30_result
+        result_dict = personas.woman40_result
         shared_keys = result_dict.keys() & icons.keys()
         print(shared_keys)
         filtered_keys = {}
@@ -93,12 +93,12 @@ def persona2():
 @app.route('/persona3', methods=['GET', 'POST'])
 def persona3():
     global result_dict
+    print("reached persona1!")
     form = SurveyForm()
     form.question1.data = "blub"
-    for field, answer in zip(form,personas.woman40):
+    for field, answer in zip(form,personas.woman30):
         if field.type == "StringField":
             field.data = answer
-            
     if form.validate_on_submit():
         answers = []
         print(f"submited!")
@@ -106,7 +106,7 @@ def persona3():
             if field.type == "StringField":
                 print(f"{field.name}={field.data}")
                 answers.append(field.data)
-        result_dict = personas.woman40_result
+        result_dict = personas.woman30_result
         shared_keys = result_dict.keys() & icons.keys()
         print(shared_keys)
         filtered_keys = {}
@@ -115,6 +115,7 @@ def persona3():
         return render_template("tree.html", tags=list(filtered_keys.values()))
     print(form.errors)
     return render_template('index.html', form=form)
+
 
 @app.route('/tree', methods=['GET', 'POST'])
 def tree():
