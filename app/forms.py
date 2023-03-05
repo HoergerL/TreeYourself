@@ -14,6 +14,7 @@ class SurveyForm(FlaskForm):
     question8 = StringField("Qualities You Admire", widget=TextArea(), render_kw={'class': 'form-control', 'rows': 10, 'style': 'width: 1000px'}, validators=[DataRequired()])
     question9 = StringField("The Ideal Future", widget=TextArea(), render_kw={'class': 'form-control', 'rows': 10, 'style': 'width: 1000px'}, validators=[DataRequired()])
     question10 = StringField("A Future to Avoid", widget=TextArea(), render_kw={'class': 'form-control', 'rows': 10, 'style': 'width: 1000px'}, validators=[DataRequired()])
+    mentor = BooleanField("I'm a Mentor!")
     submit = SubmitField('Submit',  render_kw={'class': 'btn btn-default'})
 
 # Not used yet
