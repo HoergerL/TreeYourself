@@ -2,13 +2,14 @@ from flask import render_template
 from app import app
 from app.forms import SurveyForm
 from app.personas import woman30, transgender_woman20
+from app.icons import icons
 import os
 from app.classification import tags_from_answers
 
-tags = []
-with open('tags.txt') as file:
-    for line in file:
-        tags.append(line.strip('\n'))
+tags = list(icons.keys())
+#with open('tags.txt') as file:
+#    for line in file:
+#        tags.append(line.strip('\n'))
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
