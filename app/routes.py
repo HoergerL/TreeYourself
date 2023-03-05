@@ -114,8 +114,10 @@ def persona3():
 
 @app.route('/tree', methods=['GET', 'POST'])
 def tree():
+    global result_dict
     print("/tree route reached")
-    result_dict = personas.transgender_woman20_result
+    if not result_dict:
+        result_dict = personas.transgender_woman20_result
     shared_keys = result_dict.keys() & icons.keys()
     print(shared_keys)
     filtered_keys = {}
