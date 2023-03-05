@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block navbar %}
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="textcolor: brown">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -19,22 +19,11 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('index') }}">Questions</a></li>
                 <li><a href="{{ url_for('persona1') }}">Persona 1</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="/persona1">Persona 1</a>
-                            <a class="dropdown-item" href="/persona2">Persona 2</a>
-                            <a class="dropdown-item" href="/persona3">Persona 3</a>
-                        </div>
-                    </div>
-                </li>
-
+                <li><a href="{{ url_for('persona2') }}">Persona 2</a></li>
+                <li><a href="{{ url_for('persona3') }}">Persona 3</a></li>
+                <li><a href="{{ url_for('mentor') }}">Mentorship</a></li>
             </ul>
         </div>
     </div>

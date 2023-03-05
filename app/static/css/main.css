@@ -16,3 +16,7 @@ h1 {
     /* height: 50px; */
     position: absolute;
 }
+
+.navbar-default .navbar-brand {
+    color: brown;
+}

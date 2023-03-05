@@ -33,6 +33,10 @@ def index():
     print(form.errors)
     return render_template('index.html', form=form)
 
+@app.route('/mentor', methods=['GET', 'POST'])
+def mentor():
+    return render_template('mentor.html')
+
 @app.route('/persona1', methods=['GET', 'POST'])
 def persona1():
     global result_dict
