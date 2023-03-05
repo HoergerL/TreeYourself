@@ -134,8 +134,8 @@ def tree():
 def icon(tag):
     # TODO: add answer belonging to tag!
     print(f"/icon/{tag} result dict: \n")
-    print(result_dict)
     print(result_dict[tag])
     tag_answer = result_dict[tag]
     #return f"Tag {tag} found, just wow! Tag answer: \n" + str(tag_answer)
-    return render_template("icon.html", tag=tag, answer=result_dict[tag])
+    answer=result_dict[tag][0]
+    return render_template("icon.html", tag=tag, answer=answer)
