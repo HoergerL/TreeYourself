@@ -1,39 +1,20 @@
-# Tree Yourself# Ziel
-- Formuliere deine Ziele und Wünsche zentral in einer App/Webseite.
+# Tree Yourself
+Why do you do what you do? What is the engine that keeps you up late at night or gets you going in the morning?
 
-Vorteile
-- selbstbewusster und zielgerichter Auftritt vorm VOrstellungsgespräch
-- Über die Zeit, wandelnde Ziele
-- Durch Ziele haben wir "tags" anhand denen man einen Mentor uns zurordnen könnte
+The TreeYourself website allows you to affirm the values and goals you hold dear and visualize them in a beautiful tree.
 
-# Tags
-as an icon tree (see our-vision-tree.png)
-=> Daniela NLP to generate tags from descriptions text-to-tags
+A 2019 National Bureau of Economic Research [study](https://www.nber.org/digest/dec19/women-persistently-sell-themselves-short-same-skill-men) showed after writing about their own accomplishments and goals woman performed 30 % better in contests. For the challenges in Avanade International Women's Day Hackathon 'Reducing Bias' and Women in Cloud 'Allyship' we can come up with a tree filled by icons that relate to  the answers you gave.
 
-- Familie
-- Fachkarriere vs Führungslaufbahn
-- Thematische Schwerpunkt der Karriere
-- Ethik der Firma: Grün
-- Geld Maximierung
-- Kompetenzmaximierung
-- Work Life Balance
-- Haustier auf Arbeit
-- Finanzielle Unabhängigkeit
-- Sportangebote, Fitnesssponsoship, 
+![plot](./app/static/fulltree-thumbnail.png)
 
-typische Recruiter Perks (Vergünstigugnen)
-- 30 Tage Urlaub
-- 35h Woche
+## installation guide
+navigate to the folder you want to install the folder and open a shell
 
-# Self authoring
-The Ideal Future
-- One Thing You Could Do Better
-- Things to Learn About
-- Improve Your Habits
-- Your Social Life in the Future
-- Your Leisure Activity in the Future
-- Your Family Life in the Future
-- Your Career in the Future
-- Qualities You Admire
-- The Ideal Future
-- A Future to Avoid
+```shell
+git clone https://github.com/HoergerL/TreeYourself
+cd TreeYourself
+python -m venv venv
+.\venv\scripts\activate
+python -r install requirements.txt
+flask run
+
