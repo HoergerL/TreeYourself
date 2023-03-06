@@ -11,10 +11,10 @@ A 2019 National Bureau of Economic Research [study](https://www.nber.org/digest/
 navigate to the folder you want to install the folder and open a shell
 
 ```shell
-git clone https://github.com/HoergerL/TreeYourself;
-cd TreeYourself;
-python -m venv venv;
-.\venv\scripts\activate;
-python -r install requirements.txt;
-flask run;
+git clone https://github.com/HoergerL/TreeYourself
+cd TreeYourself
+python -m venv venv
+.\venv\scripts\activate
+python -r install requirements.txt
+flask run
 
